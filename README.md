@@ -1,6 +1,6 @@
 # abalone-ml-multi-classification
 Implementing three machine learning algorithms on the Abalone dataset
-This project applies object-oriented programming (OOP) principles in Python to classify abalone specimens into age groups—young, adult, and old—based on their physical measurements and sex. The dataset is sourced from Kaggle and includes biological attributes such as length, diameter, weight, and number of rings.
+This project applies object-oriented programming (OOP) principles in Python to classify abalone specimens into age groups—young, adult, and old—based on their physical measurements and sex. The dataset is sourced from Kaggle(https://www.kaggle.com/datasets/rodolfomendes/abalone-dataset) and includes biological attributes such as length, diameter, weight, and number of rings.
 * Data preprocessing: The Abalone dataset used in this project is clean and well-structured, with no missing values or evident noise. Therefore, minimal preprocessing was required. The only transformation applied was encoding the categorical Sex feature into numerical values (M → 0, F → 1, I → 2) to make it compatible with scikit-learn classifiers.
 Additionally, the target variable Rings was mapped into three age categories: young (≤ 8 rings), adult (9–11 rings), old (≥ 12 rings)
 No outlier removal, normalization, or imputation was necessary due to the dataset’s integrity and consistency.
