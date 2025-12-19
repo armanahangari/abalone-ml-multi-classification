@@ -1,8 +1,9 @@
-# abalone-ml-multi-classification
+# Abalone classification using three different ML algorithms
+Gallstone Diagnosing Using CatBoost and Feature Selection
 Implementing three machine learning algorithms on the Abalone dataset
 This project applies object-oriented programming (OOP) principles in Python to classify abalone specimens into age groups—young, adult, and old—based on their physical measurements and sex. The dataset is sourced from Kaggle(https://www.kaggle.com/datasets/rodolfomendes/abalone-dataset) and includes biological attributes such as length, diameter, weight, and number of rings.
 * Data preprocessing: The Abalone dataset used in this project is clean and well-structured, with no missing values or evident noise. Therefore, minimal preprocessing was required. The only transformation applied was encoding the categorical Sex feature into numerical values (M → 0, F → 1, I → 2) to make it compatible with scikit-learn classifiers.
-Additionally, the target variable Rings was mapped into three age categories: young (≤ 8 rings), adult (9–11 rings), old (≥ 12 rings)
+Additionally, the target variable Rings was mapped into three age categories: young (≤ 8 rings), adult (9–11 rings), and old (≥ 12 rings)
 No outlier removal, normalization, or imputation was necessary due to the dataset’s integrity and consistency.
 * Modular design: The project follows a clean and extensible object-oriented architecture. Each machine learning algorithm —RFF, SVM, and KNN— is encapsulated within its own dedicated class. These classes inherit from a shared abstract base class called modeling, which defines common methods for model training (training) and evaluation (result). This design promotes code reuse, simplifies experimentation with multiple algorithms, and allows for easy integration of additional models in the future. By decoupling algorithm-specific logic from shared functionality, the structure remains both scalable and maintainable.
 * Algorithms used: Random Forest, Support Vector Machine (SVM), K-Nearest Neighbors (KNN)
